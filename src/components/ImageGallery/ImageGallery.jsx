@@ -1,11 +1,11 @@
 import ImageGalleryItem from '../ImageGalleryItem';
 import styles from './ImageGallery.module.css';
 
-const ImageGallery = ({images, children}) => {
+const ImageGallery = ({images, onClick}) => {
 
     return (
         <ul className={styles.ImageGallery}>
-            <ImageGalleryItem images={images}/>
+            <ImageGalleryItem images={images} onClick={onClick}/>
         </ul>
     )
 }
